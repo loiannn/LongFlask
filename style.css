@@ -19,6 +19,8 @@ body{
 .profile-card{
     width: 400px;
     text-align: center;
+    box-sizing: border-box;
+    border: 3px solid rgba(255, 255, 255, 0.781);
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 0 50px #001d49;
@@ -77,7 +79,7 @@ body{
 .sm{
     display: flex;
     justify-content: center;
-    margin: 20px 0 40px;
+    margin: 20px;
 }
 
 .sm a{
@@ -95,6 +97,8 @@ body{
     border: 2px solid #ffffff;
     border-radius: 15px;
     transition: .3s linear;
+    position: relative;
+    top: 9px;
 }
 .contact-btn:hover{
 
