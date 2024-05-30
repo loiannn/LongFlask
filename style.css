@@ -13,26 +13,31 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-position: center;
 }
 
 .profile-card{
     width: 400px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 30px;
     overflow: hidden;
+    box-shadow: 0 0 50px #001d49;
 }
 .card-header{
-    background: #ffffffe7;
-    padding: 40px 40px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 40px;
+
 }
 .pic{
     display: inline-block;
     padding: 5px;
-    background: linear-gradient(130deg, #006DED, #FF7E63 );
+    background: linear-gradient(130deg, #7759ff, #63a7ff );
     margin: auto;
     border-radius: 50%;
     background-size: 200% 200%;
     animation: animated-gradient 2s linear infinite;
+    box-shadow: 0 0 20px #000000;
 }
 @keyframes animated-gradient{
     25%{
@@ -56,27 +61,29 @@ body{
 }
 
 .name{
-    color: #012753;
+    color: #ffffff;
     font-size: 28px;
     font-weight: 600;
-    margin: 10px 0;
+    margin: 15px 0;
+    text-shadow: black 0 0 20px;
 }
 
 .desc{
-    color: #1469AD;
+    color: #4f9ddd;
     font-size: 18px;
+    
 }
 
 .sm{
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px 0 40px;
 }
 
 .sm a{
     font-size: 28px;
     width: 50px;
-    color: #122853;
+    color: #ffffff;
 }
 .sm a:hover{
     color: #0086EA;
@@ -84,14 +91,15 @@ body{
 .contact-btn{
     display: inline-block;
     padding: 12px 30px;
-    color: #1469AD;
-    border: 2px solid #012753;
+    color: #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 15px;
     transition: .3s linear;
 }
 .contact-btn:hover{
-    background: #012753;
+
     color: #ffffff;
+    box-shadow: 0 0 20px #8293f5;
 }
 
 .card-footer{
